@@ -49,20 +49,20 @@ def load_ground_truth_text(dataset_path):
 
   return ground_truth_texts
 
-if __name__ == "__main__":
-  # Example usage
-  dataset_path = "LibriSpeech/"  # Replace with the path to your LibriSpeech dataset directory
-  ground_truth_texts = load_ground_truth_text(dataset_path)
+# if __name__ == "__main__":
+#   # Example usage
+#   dataset_path = "LibriSpeech/"  # Replace with the path to your LibriSpeech dataset directory
+#   ground_truth_texts = load_ground_truth_text(dataset_path)
 
-  # Print some example ground truth texts
-  print("Number of Training Examples:", len(ground_truth_texts))
+#   # Print some example ground truth texts
+#   print("Number of Training Examples:", len(ground_truth_texts))
 
-  error_prob = 0.5
-  synthetic_dataset = generate_synthetic_dataset(ground_truth_texts, error_prob)
+#   error_prob = 0.5
+#   synthetic_dataset = generate_synthetic_dataset(ground_truth_texts, error_prob)
 
-  # Print original and synthetic sentences
-  for i, (original, synthetic) in enumerate(zip(ground_truth_texts, synthetic_dataset)):
-    print(f"Original {i + 1}: {original}")
-    print(f"Synthetic {i + 1}: {synthetic}")
-    print()
+#   # Print original and synthetic sentences
+#   for i, (original, synthetic) in enumerate(zip(ground_truth_texts, synthetic_dataset)):
+#     print(f"Original {i + 1}: {original}")
+#     print(f"Synthetic {i + 1}: {synthetic}")
+#     print()
   
