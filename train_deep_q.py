@@ -150,15 +150,11 @@ def epsilon_greedy_action(q_values, epsilon, num_chars, action_space):
         return action_type, action_position, action_new_char
     else:
         # Select the action with the highest Q-value
-        valid_indices = range(len(action_space))
-        # print("SS", )
-        max_q_value_index = np.argmax(q_values[valid_indices])
-        print("MAX Q VALUE INDEX", max_q_value_index, q_values.shape)
-        action_index = max_q_value_index
-        action_type, action_position, action_new_char = action_space[action_index]
+        action_index = torch.argmax(q_values, dim=1).item()
+        action = action_space[action_index]
+        action_type, action_position, action_new_char = action['type'], action['position'], action['new_char']
 
-
-        return action_type, action_new_char, action_position
+        return action_type, action_position, action_new_char
 
 
 
@@ -209,7 +205,7 @@ for episode in range(num_episodes):
         # Get the current state
         
         current_sentence, error_position, new_char = state
-        print("AAA", current_sentence, error_position, new_char)
+        # print("AAA", current_sentence, error_position, new_char)
 
         # Tokenize the current sentence and convert it to a tensor
         synth_error_inputs = tokenizer.encode_plus(current_sentence, return_tensors='pt', padding='max_length', truncation=True, max_length=512)
@@ -219,13 +215,12 @@ for episode in range(num_episodes):
         q_values = model(input_ids)
 
         # Choose the action with the highest Q-value
-        action_index = torch.argmax(q_values, dim=1).item()
-        action_type = env.action_space[action_index]
-        print("ACTION INDEX", action_index, action_type)
+        action_type, action_position, action_new_char = epsilon_greedy_action(q_values, epsilon, len(current_sentence), env.action_space)
+        # print("ACTION INDEX", action_type)
 
         # Perform the action in the environment
-        next_sentence, reward, done = env.step(action_type)
-
+        next_sentence, reward, done = env.step({'type': action_type, 'position': action_position, 'new_char': action_new_char})
+        print('REWARD', reward, 'DONE', done)
         # Tokenize the next sentence and convert it to a tensor
         next_inputs = tokenizer.encode_plus(next_sentence, return_tensors='pt', padding='max_length', truncation=True, max_length=512)
         next_input_ids = next_inputs["input_ids"].to(torch.float32)
