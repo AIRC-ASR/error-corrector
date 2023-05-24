@@ -2,9 +2,10 @@ import random
 import torch.optim as optim
 import string
 from nltk.metrics.distance import edit_distance
-from transformers import T5Tokenizer, T5ForConditionalGeneration
+from transformers import T5Tokenizer, T5ForConditionalGeneration, T5Config
 import numpy as np
 import torch
+import torch.nn as nn
 
 class ASRErrorCorrectionEnvironment:
     def __init__(self, clean_sentence, error_prob):
@@ -157,9 +158,6 @@ def epsilon_greedy_action(q_values, epsilon, num_chars, action_space):
         return action_type, action_new_char, action_position
 
 
-# Initialize the T5 model and tokenizer
-model = T5ForConditionalGeneration.from_pretrained('t5-base')
-tokenizer = T5Tokenizer.from_pretrained('t5-base')
 
 # Define the epsilon value for exploration
 epsilon = 0
@@ -169,15 +167,34 @@ discount_factor = 0.9
 learning_rate = 0.001
 weight_decay = 0.0001
 
-# Define the optimizer
-optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
 
 
 num_episodes = 1000
 clean_sentence = "the quick brown fox jumps over the lazy dog"
 error_prob = 0.5
+
+# Initialize the T5 model and tokenizer
+# Define a simple feed-forward neural network model
+class MLP(nn.Module):
+    def __init__(self, input_size, output_size):
+        super(MLP, self).__init__()
+        self.fc1 = nn.Linear(input_size, 128)
+        self.fc2 = nn.Linear(128, 64)
+        self.fc3 = nn.Linear(64, output_size)
+
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+
 env = ASRErrorCorrectionEnvironment(clean_sentence, error_prob)
-clean_sent_inputs = tokenizer.encode_plus(clean_sentence, return_tensors='pt', padding='max_length', truncation=True, max_length=512)
+num_actions = len(env.action_space)
+model = MLP(input_size=512, output_size=num_actions)
+
+optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
+tokenizer = T5Tokenizer.from_pretrained('t5-base')
+loss_fn = nn.MSELoss()
 
 # Training loop
 for episode in range(num_episodes):
@@ -189,49 +206,42 @@ for episode in range(num_episodes):
         # Get the current state
         current_sentence, error_position = state
 
-        # Tokenize the current sentence
+        # Tokenize the current sentence and convert it to a tensor
         synth_error_inputs = tokenizer.encode_plus(current_sentence, return_tensors='pt', padding='max_length', truncation=True, max_length=512)
+        input_ids = synth_error_inputs["input_ids"].to(torch.float32)
 
-        # Forward pass through the T5 model
-        outputs = model(input_ids=synth_error_inputs["input_ids"], decoder_input_ids=clean_sent_inputs["input_ids"])
+        # Forward pass through the model
+        q_values = model(input_ids)
 
-        # Extract the logits
-        logits = outputs.logits.squeeze(0).permute(1, 0)
-
-        # Convert logits to Q-values
-        q_values = logits.detach().numpy()
-        print('q_values', q_values)
-
-        # Choose the action based on epsilon-greedy policy
-        action_type, action_position, action_new_char = epsilon_greedy_action(q_values, epsilon, len(current_sentence), env.action_space)
+        # Choose the action with the highest Q-value
+        action_index = torch.argmax(q_values, dim=1).item()
+        action_type = env.action_space[action_index]
+        print("ACTION INDEX", action_index, action_type)
 
         # Perform the action in the environment
-        next_sentence, reward, done = env.step({"type": action_type, "position": action_position, "new_char": action_new_char})
+        next_sentence, reward, done = env.step({"type": action_type, "position": error_position })
 
-        # Update the Q-value of the chosen action
+        # Tokenize the next sentence and convert it to a tensor
         next_inputs = tokenizer.encode_plus(next_sentence, return_tensors='pt', padding='max_length', truncation=True, max_length=512)
-        next_outputs = model(**next_inputs)
-        next_logits = next_outputs.logits.squeeze(0)
-        next_q_values = next_logits.detach().numpy()
-        max_q_value = np.max(next_q_values)
+        next_input_ids = next_inputs["input_ids"]
+
+        # Forward pass through the model to get the Q-values of the next state
+        next_q_values = model(next_input_ids)
+
+        # Compute the target Q-value
+        max_q_value = torch.max(next_q_values, dim=1)[0]
         target_q_value = reward + discount_factor * max_q_value
-        q_values[env.action_space.index((action_type, action_new_char, action_position))] = target_q_value
 
-        # Convert Q-values to logits
-        updated_logits = torch.tensor(q_values).unsqueeze(0)
+        # Compute the loss
+        loss = loss_fn(q_values, target_q_value.unsqueeze(1))
 
-        # Backward pass through the T5 model
-        updated_outputs = model(**next_inputs, labels=updated_logits)
-
-        # Update the model with the updated logits
-        updated_outputs.loss.backward()
+        # Backpropagation
+        optimizer.zero_grad()
+        loss.backward()
         optimizer.step()
 
-        # Clear gradients
-        optimizer.zero_grad()
-
         # Update the state for the next iteration
-        state = (next_sentence, error_position)
+        state = next_sentence
 
-    # Print the final Q-values for monitoring
+    # Print the episode number and final Q-values for monitoring
     print(f"Episode: {episode + 1}, Final Q-values: {q_values}")
