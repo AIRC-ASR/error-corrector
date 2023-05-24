@@ -10,7 +10,7 @@ import torch.nn as nn
 class ASRErrorCorrectionEnvironment:
     def __init__(self, clean_sentence, error_prob):
         self.clean_sentence = clean_sentence
-        self.current_sentence, self.error_position = self.generate_synthetic_errors(clean_sentence, error_prob)
+        self.current_sentence, self.error_position, self.new_char = self.generate_synthetic_errors(clean_sentence, error_prob)
         self.action_space = self.generate_action_space(clean_sentence)
         self.error_prob = error_prob
         self.done = False
@@ -63,9 +63,9 @@ class ASRErrorCorrectionEnvironment:
 
 
     def reset(self):
-        self.current_sentence, self.error_position = self.generate_synthetic_errors(self.current_sentence, self.error_prob)
+        self.current_sentence, self.error_position, self.new_char = self.generate_synthetic_errors(self.current_sentence, self.error_prob)
         self.done = False
-        return self.current_sentence, self.error_position
+        return self.current_sentence, self.error_position, self.new_char
 
     def generate_synthetic_errors(self, sentence, error_prob):
           sentence_chars = list(sentence)
@@ -73,6 +73,7 @@ class ASRErrorCorrectionEnvironment:
           error_types = ["insertion", "deletion", "substitution"]
           error_type = None
           error_position = None
+          new_char = None
 
           if random.random() < error_prob:
             error_type = random.choice(error_types)
@@ -81,19 +82,21 @@ class ASRErrorCorrectionEnvironment:
             if error_type == "insertion":
               char = random.choice(sentence_chars)
               sentence_chars.insert(error_position, char)
+              new_char = char
             elif error_type == "deletion":
               del sentence_chars[error_position]
             elif error_type == "substitution":
               char = random.choice(sentence_chars)
               sentence_chars[error_position] = char
+              new_char = char
           else:
             error_type = "no_change"
 
-          return "".join(sentence_chars), error_position
+          return "".join(sentence_chars), error_position, new_char
 
     def step(self, action):
         # Unpack the action components
-        action_type, action_position, action_new_char = action
+        action_type, action_position, action_new_char = action['type'], action['position'], action['new_char']
 
         # Apply the chosen action to the current sentence
         # Update the error position based on the action
@@ -127,7 +130,7 @@ class ASRErrorCorrectionEnvironment:
 
     def get_state(self):
         # Return the current state
-        return self.current_sentence, self.error_position
+        return self.current_sentence, self.error_position, self.new_char
 
 # Epsilon-greedy exploration strategy
 def epsilon_greedy_action(q_values, epsilon, num_chars, action_space):
@@ -204,7 +207,9 @@ for episode in range(num_episodes):
 
     while not done:
         # Get the current state
-        current_sentence, error_position = state
+        
+        current_sentence, error_position, new_char = state
+        print("AAA", current_sentence, error_position, new_char)
 
         # Tokenize the current sentence and convert it to a tensor
         synth_error_inputs = tokenizer.encode_plus(current_sentence, return_tensors='pt', padding='max_length', truncation=True, max_length=512)
@@ -219,11 +224,11 @@ for episode in range(num_episodes):
         print("ACTION INDEX", action_index, action_type)
 
         # Perform the action in the environment
-        next_sentence, reward, done = env.step({"type": action_type, "position": error_position })
+        next_sentence, reward, done = env.step(action_type)
 
         # Tokenize the next sentence and convert it to a tensor
         next_inputs = tokenizer.encode_plus(next_sentence, return_tensors='pt', padding='max_length', truncation=True, max_length=512)
-        next_input_ids = next_inputs["input_ids"]
+        next_input_ids = next_inputs["input_ids"].to(torch.float32)
 
         # Forward pass through the model to get the Q-values of the next state
         next_q_values = model(next_input_ids)
@@ -241,7 +246,7 @@ for episode in range(num_episodes):
         optimizer.step()
 
         # Update the state for the next iteration
-        state = next_sentence
+        state = (next_sentence, env.error_position, env.new_char)
 
     # Print the episode number and final Q-values for monitoring
     print(f"Episode: {episode + 1}, Final Q-values: {q_values}")
