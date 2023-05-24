@@ -3,7 +3,7 @@ import glob
 import random
 
 
-def generate_synthetic_errors(sentence, error_prob):
+def synthetic_step(sentence, error_prob):
     sentence_chars = list(sentence)
     num_chars = len(sentence_chars)
     error_types = ["insertion", "deletion", "substitution"]
@@ -22,15 +22,17 @@ def generate_synthetic_errors(sentence, error_prob):
       elif error_type == "substitution":
         char = random.choice(sentence_chars)
         sentence_chars[error_position] = char
+    else:
+      error_type = "no_change"
 
-    return "".join(sentence_chars), error_type, error_position
+    return "".join(sentence_chars), sentence, error_type, error_position
 
 
 def generate_synthetic_dataset(sentences, error_prob):
   synthetic_dataset = []
   for sentence in sentences:
-    synthetic_sentence, error_type, error_position = generate_synthetic_errors(sentence, error_prob)
-    synthetic_dataset.append((synthetic_sentence, error_type, error_position))
+    synthetic_sentence, sentence, error_type, error_position = synthetic_step(sentence, error_prob)
+    synthetic_dataset.append((synthetic_sentence, sentence, error_type, error_position))
 
   return synthetic_dataset
 
