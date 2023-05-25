@@ -119,7 +119,7 @@ class ASRErrorCorrectionEnvironment:
         current_distance = edit_distance(self.current_sentence, self.clean_sentence)
 
         # Calculate the reward
-        reward = previous_distance - current_distance
+        reward = -current_distance
 
         # Check if the episode is done
         self.done = (current_distance == 0)
@@ -205,7 +205,7 @@ for episode in range(num_episodes):
         # Get the current state
         
         current_sentence, error_position, new_char = state
-        # print("AAA", current_sentence, error_position, new_char)
+        print("AAA", current_sentence, error_position, new_char)
 
         # Tokenize the current sentence and convert it to a tensor
         synth_error_inputs = tokenizer.encode_plus(current_sentence, return_tensors='pt', padding='max_length', truncation=True, max_length=512)
@@ -230,10 +230,11 @@ for episode in range(num_episodes):
 
         # Compute the target Q-value
         max_q_value = torch.max(next_q_values, dim=1)[0]
-        target_q_value = reward + discount_factor * max_q_value
+        target_q_value = reward + discount_factor *  max_q_value * (1 - int(done))
 
         # Compute the loss
-        loss = loss_fn(q_values, target_q_value.unsqueeze(1))
+        print("target_q_value", target_q_value)
+        loss = loss_fn(q_values, target_q_value)
 
         # Backpropagation
         optimizer.zero_grad()
@@ -241,7 +242,7 @@ for episode in range(num_episodes):
         optimizer.step()
 
         # Update the state for the next iteration
-        state = (next_sentence, env.error_position, env.new_char)
+        state = (next_sentence, action_position, action_new_char)
 
     # Print the episode number and final Q-values for monitoring
     print(f"Episode: {episode + 1}, Final Q-values: {q_values}")
