@@ -1,0 +1,20 @@
+Secondary Words ['thus']
+Replacement Word thus this False
+Secondary Words ['they']
+Replacement Word they the False
+Secondary Words ['that']
+Replacement Word that thought False
+Secondary Words ['the']
+Replacement Word the they False
+Secondary Words ['through']
+Replacement Word through there False
+Secondary Words ['now']
+Replacement Word now know False
+Secondary Words ['the']
+Replacement Word the they False
+Secondary Words ['they']
+Replacement Word they the False
+Secondary Words ['though']
+Replacement Word though the False
+Secondary Words ['wounded']
+Replacement Word wounded wanted False

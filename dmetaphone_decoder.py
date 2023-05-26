@@ -9,6 +9,7 @@ with open('training_examples.json', encoding='utf-8') as json_file:
 
 for training_example in training_examples:
   sentence, label = training_example['sentence'], training_example['label']
+  original_sentence = sentence[:]
 
   # Create the metaphone dictionary mapping between phonetic codes and words
   metaphone_dict = {}
@@ -35,18 +36,26 @@ for training_example in training_examples:
     else:
       phonetic_distances.append(edit_distance(input_metaphone, label_metaphone))
 
-  sentence_list = sentence.split(";")
+  sentence_list = sentence.lower().strip().split(";")
+  fixed = False
   for i, phonetic_distance in enumerate(phonetic_distances):
     if phonetic_distance != 0:
       secondary_metaphone = input_metaphones_secondary[i]
+      # print('Secondary Metaphone', secondary_metaphone)
       if secondary_metaphone is not None:
         secondary_words = list(metaphone_dict[secondary_metaphone])
         secondary_words.sort(key=lambda x: edit_distance(x, label_words[i]))
+        secondary_words.remove(sentence_list[i].strip())
+        if len(secondary_words) == 0:
+          continue
         replacement_word = secondary_words[0]
+        print('Secondary Words', secondary_words)
+        print('Replacement Word', replacement_word, sentence_list[i].strip(), replacement_word == sentence_list[i].strip())
         # print("Secondary Metaphone:", secondary_metaphone, secondary_words, replacement_word)
-        sentence_list[i] = replacement_word
+        sentence_list[i] = replacement_word.upper()
 
-      input_metaphones[i] = secondary_metaphone
+        input_metaphones[i] = secondary_metaphone
+        fixed = True
 
   phonetic_distances = []
   for input_metaphone, label_metaphone in zip(input_metaphones, label_metaphones):
@@ -56,9 +65,11 @@ for training_example in training_examples:
       phonetic_distances.append(edit_distance(input_metaphone, label_metaphone))
 
   phonetic_distance = sum(phonetic_distances) / len(phonetic_distances)
-  if phonetic_distance != 0:
+  if fixed and phonetic_distance == 0:
+  # if phonetic_distance != 0:
     sentence = ";".join(sentence_list)
-    print("Transcription:", sentence)
+    print("Original Transcription:", original_sentence)
+    print("Corrected Transcription:", sentence)
     print("Label:", label)
     print("Phonetic Distance:", phonetic_distance, phonetic_distances)
     print()
