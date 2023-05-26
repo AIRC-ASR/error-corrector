@@ -1,20 +1,102 @@
+Secondary Words ['thath']
+Replacement Word thath that False
+Secondary Words ['widths']
+Replacement Word widths withes False
+Original Transcription: UNCAS ; OCCUPIED ; A ; DISTANT ; CORNER ; IN ; A ; RECLINING ; ATTITUDE ; BEING ; RIGIDLY ; BOUND ; BOTH ; HANDS ; AND ; FEET ; BY ; STRONG ; AND ; PAINFUL ; WITHES
+Corrected Transcription: uncas ; occupied ; a ; distant ; corner ; in ; a ; reclining ; attitude ; being ; rigidly ; bound ; both ; hands ; and ; feet ; by ; strong ; and ; painful ;WIDTHS
+Label: UNCAS ; OCCUPIED ; A ; DISTANT ; CORNER ; IN ; A ; RECLINING ; ATTITUDE ; BEING ; RIGIDLY ; BOUND ; BOTH ; HANDS ; AND ; FEET ; BY ; STRONG ; AND ; PAINFUL ; WIDTHS
+Old Phonetic Distance: 0.047619047619047616
+Phonetic Distance: 0.047619047619047616 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+
 Secondary Words ['thus']
 Replacement Word thus this False
 Secondary Words ['they']
 Replacement Word they the False
+Original Transcription: BE ; IT ; SAID ; TO ; THE ; HONOR ; OF ; SOME ; OF ; THE ; OFFICERS ; ENTRUSTED ; WITH ; THE ; TERRIBLE ; COMMISSION ; THAT ; WHEN ; THEY ; LEARNED ; ITS ; TRUE ; SIGNIFICANCE ; THEY ; RESIGNED ; THEIR ; AUTHORITY ; RATHER ; THAN ; HAVE ; ANYTHING ; TO ; DO ; WITH ; WHAT ; THEY ; DESIGNATED ; A ; COLD ; BLOODED ; BUTCHERY
+Corrected Transcription: be ; it ; said ; to ; the ; honor ; of ; some ; of ; the ; officers ; entrusted ; with ;THEY; terrible ; commission ; that ; when ; they ; learned ; its ; true ; significance ; they ; resigned ; their ; authority ; rather ; than ; have ; anything ; to ; do ; with ; what ; they ; designated ; a ; cold ; blooded ; butchery
+Label: BE ; IT ; SAID ; TO ; THE ; HONOR ; OF ; SOME ; OF ; THE ; OFFICERS ; INTRUSTED ; WITH ;  A  ; TERRIBLE ; COMMISSION ; THAT ; WHEN ; THEY ;  LEARNT ; ITS ; TRUE ; SIGNIFICANCE ; THEY ; RESIGNED ; THEIR ; AUTHORITY ; RATHER ; THAN ; HAVE ; ANYTHING ; TO ; DO ; WITH ; WHAT ; THEY ; DESIGNATED ; A ; COLD ; BLOODED ; BUTCHERY
+Old Phonetic Distance: 0.024390243902439025
+Phonetic Distance: 0.024390243902439025 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Secondary Words ['large']
+Replacement Word large larch False
+Original Transcription: IT ; WAS ; HIGH ; LARCH
+Corrected Transcription: it ; was ; high ;LARGE
+Label: IT ; WAS ; HIGH ; LARGE
+Old Phonetic Distance: 0.25
+Phonetic Distance: 0.25 [0, 0, 0, 1]
+
 Secondary Words ['that']
 Replacement Word that thought False
+Original Transcription: WHAT ; CAN ; BE ; SAID ; DURING ; THAT ; TIME ; SIR ; CHRIS ; THOUGHT ; TO ; ASK
+Corrected Transcription: what ; can ; be ; said ; during ; that ; time ; sir ; chris ;THAT; to ; ask
+Label: WHAT ; CAN ; BE ; SAID ; DURING ; THAT ; TIME ; SIR ; CHRIS ;  OUGHT  ; TO ; ASK
+Old Phonetic Distance: 0.16666666666666666
+Phonetic Distance: 0.16666666666666666 [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0]
+
+Secondary Words ['the']
+Replacement Word the they False
+Secondary Words ['gothiere']
+Replacement Word gothiere gauthier False
+Original Transcription: GAUTHIER ; BISHOP ; OF ; CHALONS ; HELD ; HIS ; OWN ; IN ; THIS ; MATTER ; AGAINST ; OTHO ; DUKE ; OF ; BURGUNDY
+Corrected Transcription: GOTHIERE; bishop ; of ; chalons ; held ; his ; own ; in ; this ; matter ; against ; otho ; duke ; of ; burgundy
+Label: GOTHIERE ; BISHOP ; OF ;  CHALON ; HELD ; HIS ; OWN ; IN ; THIS ; MATTER ; AGAINST ; OTHO ; DUKE ; OF ; BURGUNDY
+Old Phonetic Distance: 0.13333333333333333
+Phonetic Distance: 0.13333333333333333 [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 Secondary Words ['the']
 Replacement Word the they False
 Secondary Words ['through']
 Replacement Word through there False
 Secondary Words ['now']
 Replacement Word now know False
+Original Transcription: WE ;  KNOW ; NOW ; <eps> ; THAT ; THREATS ; AND ; PUNISHMENTS ; CANNOT ; DIMINISH ; THEIR ; NUMBER ; THAT ; THAT ; CAN ; ONLY ; BE ; DONE ; BY ; CHANGE ; OF ; ENVIRONMENT ; AND ; MORAL ; INFLUENCE
+Corrected Transcription: we ;NOW; now ; <eps> ; that ; threats ; and ; punishments ; cannot ; diminish ; their ; number ; that ; that ; can ; only ; be ; done ; by ; change ; of ; environment ; and ; moral ; influence
+Label: WE ; <eps> ; NOW ;  KNOW ; THAT ; THREATS ; AND ; PUNISHMENTS ; CANNOT ; DIMINISH ; THEIR ; NUMBER ; THAT ; THAT ; CAN ; ONLY ; BE ; DONE ; BY ; CHANGE ; OF ; ENVIRONMENT ; AND ; MORAL ; INFLUENCE
+Old Phonetic Distance: 0.16
+Phonetic Distance: 0.16 [0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 Secondary Words ['the']
 Replacement Word the they False
 Secondary Words ['they']
 Replacement Word they the False
+Original Transcription: GURR ; TURNED ; AWAY ; IMPATIENTLY ; AGAIN ; AND ; SIGNING ; TO ; HIS ; MEN ; TO ; FOLLOW ; THEY ; ALL ; BEGAN ; TO ; TRAMP ; UP ; THE ; STEEP ; TRACK ; LEADING ; TOWARD ; THE ; HOZE ; WITH ; THE ; RABBITS ; SCUTTLING ; AWAY ; AMONG ; THE ; FURZE  ; AND ; SHOWING ; THEIR ; WHITE ; COTTONY ; TAILS ; FOR ; A ; MOMENT ; AS ; THEY ; DARTED ; DOWN ; INTO ; THEIR ; HOLES
+Corrected Transcription: gurr ; turned ; away ; impatiently ; again ; and ; signing ; to ; his ; men ; to ; follow ; they ; all ; began ; to ; tramp ; up ;THEY; steep ; track ; leading ; toward ; the ; hoze ; with ; the ; rabbits ; scuttling ; away ; among ; the ; furze  ; and ; showing ; their ; white ; cottony ; tails ; for ; a ; moment ; as ; they ; darted ; down ; into ; their ; holes
+Label: GUR  ; TURNED ; AWAY ; IMPATIENTLY ; AGAIN ; AND ; SIGNING ; TO ; HIS ; MEN ; TO ; FOLLOW ; THEY ; ALL ; BEGAN ; TO ; TRAMP ; UP ;  A  ; STEEP ; TRACK ; LEADING ; TOWARD ; THE ; HOSE ; WITH ; THE ; RABBITS ; SCUTTLING ; AWAY ; AMONG ; THE ; FIRSAN ; AND ; SHOWING ; THEIR ; WHITE ; COTTONY ; TAILS ; FOR ; A ; MOMENT ; AS ; THEY ; DARTED ; DOWN ; INTO ; THEIR ; HOLES
+Old Phonetic Distance: 0.04081632653061224
+Phonetic Distance: 0.04081632653061224 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Secondary Words ['girded']
+Replacement Word girded girthed False
+Original Transcription: SHE ; SAID ; IT ; HATH ; REACHED ; ME ; O ; AUSPICIOUS ; KING ; THAT ; WHEN ; THE ;  STOKER ; GIRTHED ; HIS ; ASS ; FOR ; FLIGHT ; AND ; BESPAKE ; HIMSELF ; SAYING ; OH ; WOULD ; I ; KNEW ; WHAT ; IS ; BECOME ; OF ; HIM
+Corrected Transcription: she ; said ; it ; hath ; reached ; me ; o ; auspicious ; king ; that ; when ; the ;  stoker ;GIRDED; his ; ass ; for ; flight ; and ; bespake ; himself ; saying ; oh ; would ; i ; knew ; what ; is ; become ; of ; him
+Label: SHE ; SAID ; IT ; HATH ; REACHED ; ME ; O ; AUSPICIOUS ; KING ; THAT ; WHEN ; THE ; STARKER ;  GIRDED ; HIS ; ASS ; FOR ; FLIGHT ; AND ; BESPAKE ; HIMSELF ; SAYING ; OH ; WOULD ; I ; KNEW ; WHAT ; IS ; BECOME ; OF ; HIM
+Old Phonetic Distance: 0.0967741935483871
+Phonetic Distance: 0.0967741935483871 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Secondary Words ['with']
+Replacement Word with wide False
+Original Transcription: IT ; WAS ; HERE ; THAT ; MOST ; MAGNIFICENT ; DINNERS ; WERE ; ARRANGED ; IT ; WAS ; HERE ; THAT ; EXTRAORDINARY ; DISHES ; WERE ; CONCOCTED ; BY ; CHEFS  ;  OF  ; WORLD ; WIDE ; FAME ; IT ; WAS ; HERE ; THAT ; LOBSTER ;  A   ;    LA   ; NEWBERG ; REACHED ; ITS ; HIGHEST ; PERFECTION ; AND ; THIS ; IS ; THE ; RECIPE ; THAT ; WAS ; FOLLOWED ; WHEN ; IT ; WAS ; PREPARED ; IN ; THE ; DELMONICO
+Corrected Transcription: it ; was ; here ; that ; most ; magnificent ; dinners ; were ; arranged ; it ; was ; here ; that ; extraordinary ; dishes ; were ; concocted ; by ; chefs  ;  of  ; world ;WITH; fame ; it ; was ; here ; that ; lobster ;  a   ;    la   ; newberg ; reached ; its ; highest ; perfection ; and ; this ; is ; the ; recipe ; that ; was ; followed ; when ; it ; was ; prepared ; in ; the ; delmonico
+Label: IT ; WAS ; HERE ; THAT ; MOST ; MAGNIFICENT ; DINNERS ; WERE ; ARRANGED ; IT ; WAS ; HERE ; THAT ; EXTRAORDINARY ; DISHES ; WERE ; CONCOCTED ; BY ; SHEFFS ; WITH ;  WORD ; RIE  ; FAME ; IT ; WAS ; HERE ; THAT ; LOBSTER ; ALLE ; NEWBURG ;  <eps>  ; REACHED ; ITS ; HIGHEST ; PERFECTION ; AND ; THIS ; IS ; THE ; RECIPE ; THAT ; WAS ; FOLLOWED ; WHEN ; IT ; WAS ; PREPARED ; IN ; THE ;  DOMONICO
+Old Phonetic Distance: 0.28
+Phonetic Distance: 0.28 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 0, 0, 0, 0, 0, 0, 1, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+
+Secondary Words ['girding']
+Replacement Word girding girthing False
+Original Transcription: THE ; CHAMBERLAIN ; CALLED ; THE ; CASTRATO ; AND ; CHARGED ; HIM ; TO ; DO ; ACCORDINGLY ; SO ; HE ; REPLIED ; I ; HEAR ; AND ; I ; OBEY ; AND ; HE ; TOOK ; HIS ; PAGES ; WITH ; HIM ; AND ; WENT ; OUT ; IN ; SEARCH ; OF ; THE ;  STOKER ; TILL ; HE ; FOUND ; HIM ; IN ; THE ; REAR ; OF ; THE ; CARAVAN ; GIRTHING ; HIS ; ASS ; AND ; PREPARING ; FOR ; FLIGHT
+Corrected Transcription: the ; chamberlain ; called ; the ; castrato ; and ; charged ; him ; to ; do ; accordingly ; so ; he ; replied ; i ; hear ; and ; i ; obey ; and ; he ; took ; his ; pages ; with ; him ; and ; went ; out ; in ; search ; of ; the ;  stoker ; till ; he ; found ; him ; in ; the ; rear ; of ; the ; caravan ;GIRDING; his ; ass ; and ; preparing ; for ; flight
+Label: THE ; CHAMBERLAIN ; CALLED ;  HE ; CASTRATO ; AND ; CHARGED ; HIM ; TO ; DO ; ACCORDINGLY ; SO ; HE ; REPLIED ; I ; HEAR ; AND ; I ; OBEY ; AND ; HE ; TOOK ; HIS ; PAGES ; WITH ; HIM ; AND ; WENT ; OUT ; IN ; SEARCH ; OF ; THE ; STALKER ; TILL ; HE ; FOUND ; HIM ; IN ; THE ; REAR ; OF ; THE ; CARAVAN ; GIRDING  ; HIS ; ASS ; AND ; PREPARING ; FOR ; FLIGHT
+Old Phonetic Distance: 0.0784313725490196
+Phonetic Distance: 0.0784313725490196 [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+
 Secondary Words ['though']
 Replacement Word though the False
+Original Transcription: MISTER ; FISH ; IS ; THE ; SQUIRE ; OF ; DAMES ; AND ; HAS ; SO ; MANY ; MISTRESSES ; THAT ; ANYBODY ; MAY ; PRETEND ; A ; SHARE ; IN ; HIM ; AND ; BE ; BELIEVED ; BUT ; THOUGH ; I ; HAVE ; THE ; HONOUR ; TO ; BE ; HIS ; NEAR ; NEIGHBOUR ; TO ; SPEAK ; FREELY ; I ; CANNOT ; BRAG ; MUCH ; THAT ; HE ; MAKES ; ANY ; COURT ; TO ; ME ; AND ; I ; KNOW ; NO ; YOUNG ; WOMAN ; IN ; THE ; COUNTRY ; THAT ; HE ; DOES ; NOT ; VISIT ; OFTEN
+Corrected Transcription: mister ; fish ; is ;THOUGH; squire ; of ; dames ; and ; has ; so ; many ; mistresses ; that ; anybody ; may ; pretend ; a ; share ; in ; him ; and ; be ; believed ; but ; though ; i ; have ; the ; honour ; to ; be ; his ; near ; neighbour ; to ; speak ; freely ; i ; cannot ; brag ; much ; that ; he ; makes ; any ; court ; to ; me ; and ; i ; know ; no ; young ; woman ; in ; the ; country ; that ; he ; does ; not ; visit ; often
+Label: MISTER ; FISH ; IS ;  A  ; SQUIRE ; OF ; DAMES ; AND ; HAS ; SO ; MANY ; MISTRESSES ; THAT ; ANYBODY ; MAY ; PRETEND ; A ; SHARE ; IN ; HIM ; AND ; BE ; BELIEVED ; BUT ; THOUGH ; I ; HAVE ; THE ; HONOR  ; TO ; BE ; HIS ; NEAR ; NEIGHBOUR ; TO ; SPEAK ; FREELY ; I ; CANNOT ; BRAG ; MUCH ; THAT ; HE ; MAKES ; ANY ; COURT ; TO ; ME ; AND ; I ; KNOW ; NO ; YOUNG ; WOMAN ; IN ; THE ; COUNTRY ; THAT ; HE ; DOES ; NOT ; VISIT ; OFTEN
+Old Phonetic Distance: 0.015873015873015872
+Phonetic Distance: 0.015873015873015872 [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 Secondary Words ['wounded']
 Replacement Word wounded wanted False

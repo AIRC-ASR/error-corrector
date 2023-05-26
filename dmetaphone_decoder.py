@@ -22,6 +22,15 @@ for training_example in training_examples:
       metaphone_dict[metaphone] = set()
     metaphone_dict[metaphone].add(word)
 
+  for word in label.split(";"):
+    word = word.strip().lower()
+    metaphone = dmetaphone(word)[1]
+    if metaphone is None:
+      continue
+    if metaphone not in metaphone_dict:
+      metaphone_dict[metaphone] = set()
+    metaphone_dict[metaphone].add(word)
+
   input_words = [word.strip().lower() for word in sentence.split(";")]
   input_metaphones = [dmetaphone(word)[0] for word in input_words]
   input_metaphones_secondary = [dmetaphone(word)[1] for word in input_words]
@@ -36,6 +45,7 @@ for training_example in training_examples:
     else:
       phonetic_distances.append(edit_distance(input_metaphone, label_metaphone))
 
+  old_phonetic_distance = sum(phonetic_distances) / len(phonetic_distances)
   sentence_list = sentence.lower().strip().split(";")
   fixed = False
   for i, phonetic_distance in enumerate(phonetic_distances):
@@ -65,11 +75,13 @@ for training_example in training_examples:
       phonetic_distances.append(edit_distance(input_metaphone, label_metaphone))
 
   phonetic_distance = sum(phonetic_distances) / len(phonetic_distances)
-  if fixed and phonetic_distance == 0:
+  if fixed and old_phonetic_distance == phonetic_distance:
   # if phonetic_distance != 0:
     sentence = ";".join(sentence_list)
     print("Original Transcription:", original_sentence)
     print("Corrected Transcription:", sentence)
     print("Label:", label)
+    print("Old Phonetic Distance:", old_phonetic_distance)
     print("Phonetic Distance:", phonetic_distance, phonetic_distances)
+
     print()
