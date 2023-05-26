@@ -2,3 +2,5 @@ datasets
 torch
 transformers
 sentencepiece
+fuzzy
+nltk
