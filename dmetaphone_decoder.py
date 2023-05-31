@@ -34,6 +34,13 @@ for training_example in training_examples:
   input_words = [word.strip().lower() for word in sentence.split(";")]
   input_metaphones = [dmetaphone(word)[0] for word in input_words]
   input_metaphones_secondary = [dmetaphone(word)[1] for word in input_words]
+  print('input_words', input_words[:5])
+  print("input_metaphones", input_metaphones[:5])
+  print("input_metaphones_secondary", input_metaphones_secondary[:5])
+  
+# input_words ['i', 'am', 'willing', 'to', 'enter']
+# input_metaphones [b'A', b'AM', b'ALNK', b'T', b'ANTR']
+# input_metaphones_secondary [None, None, b'FLNK', None, None]
 
   label_words = [word.strip().lower() for word in label.split(";")]
   label_metaphones = [dmetaphone(word)[0] for word in label_words]
