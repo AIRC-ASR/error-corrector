@@ -1,0 +1,138 @@
+Original Transcription: DON'T  ; CRY ; DON'T ; CRY ; HE ; WHISPERED
+Corrected Transcription: DOAN; cry ; don't ; cry ; he ; whispered
+Label: ODON'T ; CRY ; DON'T ; CRY ; HE ; WHISPERED
+Old Phonetic Distance: 0.16666666666666666
+Phonetic Distance: 0.3333333333333333 [2, 0, 0, 0, 0, 0]
+
+Original Transcription: MUNNY ; MY ; IRON'S ; TWITE ; TOLD ; PEASE  ; PUT ; IT ; DOWN ; TO ; WARM
+Corrected Transcription: munny ; my ; iron's ; twite ; told ;PEACE; put ; it ; down ; to ; warm
+Label: MONEY ; MY ; IRONS  ; TWITE ; TOLD ; PLEASE ; PUT ; IT ; DOWN ; TO ; WARM
+Old Phonetic Distance: 0.09090909090909091
+Phonetic Distance: 0.18181818181818182 [0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0]
+
+Original Transcription: YES ; DEAD ; THESE ; FOUR ; YEARS ;  AN ; A ; GOOD ; JOB ; FOR ; HER ; TOO
+Corrected Transcription: yes ; dead ; these ; four ; years ;'N; a ; good ; job ; for ; her ; too
+Label: YES ; DEAD ; THESE ; FOUR ; YEARS ; AND ; A ; GOOD ; JOB ; FOR ; HER ; TOO
+Old Phonetic Distance: 0.08333333333333333
+Phonetic Distance: 0.16666666666666666 [0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: SOMETIMES ; I'M ; THAT ; YEARNING ; FOR ; A ; SMOKE ; I'M ; NEARLY ; CRAZY ;  AN ; I ;  DUNNO   ; WHICH ; IS ; WORST ;  DYIN ; ONE ; WAY ; OR ; ANOTHER ; <eps>
+Corrected Transcription: sometimes ; i'm ; that ; yearning ; for ; a ; smoke ; i'm ; nearly ; crazy ;'N; i ;  dunno   ; which ; is ;WERST;  dyin ; one ; way ; or ; another ; <eps>
+Label: SOMETIMES ; I'M ; THAT ; YEARNIN  ; FOR ; A ; SMOKE ; I'M ; NEARLY ; CRAZY ; AND ; I ; DUN'TKNO ; WHICH ; IS ; WORSE ; DYING ; ONE ; WAY ; OR ;   THE   ; OTHER
+Old Phonetic Distance: 0.5
+Phonetic Distance: 0.5454545454545454 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 0, 1, 1, 0, 0, 0, 3, 3]
+
+Original Transcription: THEN ; I ; DRANK ; HALF ; OF ; THE ; HORNFUL  ; AND ; SENT ; THE ; REST ; ACROSS ; THE ; FIRE ; TO ; THE ; FARMER ; HE ; TOOK ; IT ; AND ; SMILED ; SAYING
+Corrected Transcription: then ; i ; drank ; half ; of ; the ; hornful  ; and ;CENT; the ; rest ; across ; the ; fire ; to ; the ; farmer ; he ; took ; it ; and ; smiled ; saying
+Label: THEN ; I ; DRANK ; HALF ; OF ; THE ; HORNFULL ; AND ; SET  ; THE ; REST ; ACROSS ; THE ; FIRE ; TO ; THE ; FARMER ; HE ; TOOK ; IT ; AND ; SMILED ; SAYING
+Old Phonetic Distance: 0.043478260869565216
+Phonetic Distance: 0.08695652173913043 [0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: NOW ; THEN ; LET'S ; ENTER ; THE ; CITY ;  AN ; ENJOY ; THE ; GRAND ; FEAST ; THAT'S ; BEING ; COOKED ; I'M ; NEARLY ; STARVED ; MYSELF ; FOR ; THIS ; CONQUERIN  ; KINGDOMS ; IS ; HARD ; WORK
+Corrected Transcription: now ; then ; let's ; enter ; the ; city ;'N; enjoy ; the ;GRANDE; feast ; that's ; being ; cooked ; i'm ; nearly ; starved ; myself ; for ; this ; conquerin  ; kingdoms ; is ; hard ; work
+Label: NOW ; THEN ; LET'S ; ENTER ; THE ; CITY ; AND ; ENJOY ; THE ; GREAT ; FEAST ; THAT'S ; BEING ; COOKED ; I'M ; NEARLY ; STARVED ; MYSELF ; FOR ; THIS ; CONQUERING ; KINGDOMS ; IS ; HARD ; WORK
+Old Phonetic Distance: 0.08
+Phonetic Distance: 0.12 [0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: THINKS ; I ; TO ; MYSELF ; I ; NEVER ; SEEN ; ANYTHING ; OSH ; POPHAM ; COULDN'T ; MEND ; IF ; HE ; TOOK ; TIME ; ENOUGH ; AND ; GLUE ; ENOUGH ; SO ; I ; CARRIED ; THIS ; LITTLE ; FELLER ; HOME ; IN ; A ; BUSHEL ; BASKET ; ONE ; NIGHT ; LAST ; MONTH ;  AN ; I'VE ; SPENT ; ELEVEN ; EVENIN'S ;  PUTTIN ; HIM ; TOGETHER
+Corrected Transcription: thinks ; i ; to ; myself ; i ; never ; seen ; anything ; osh ; popham ; couldn't ; mend ; if ; he ; took ; time ; enough ; and ; glue ; enough ; so ; i ; carried ; this ; little ; feller ; home ; in ; a ; bushel ; basket ; one ; night ; last ; month ;'N; i've ; spent ; eleven ; evenin's ;  puttin ; him ; together
+Label: THINKS ; I ; TO ; MYSELF ; I ; NEVER ; SEEN ; ANYTHING ; ASH ; POPHUM ; COULDN'T ; MEND ; IF ; HE ; TOOK ; TIME ; ENOUGH ; AND ; GLUE ; ENOUGH ; SO ; I ; CARRIED ; THIS ; LITTLE ; FELLER ; HOME ; IN ; A ; BUSHEL ; BASKET ; ONE ; NIGHT ; LAST ; MONTH ; AND ; I'VE ; SPENT ; ELEVEN ; EVENINGS ; PUTTING ; HIM ; TOGETHER
+Old Phonetic Distance: 0.046511627906976744
+Phonetic Distance: 0.06976744186046512 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0]
+
+Original Transcription: WELL ; AS ; I ; SAY ; IT'S ; AN ; AWFUL ; QUEER ; WORLD ; THEY ; CLAP ; ALL ; THE ; BURGLARS ; INTO ; JAIL ; AND ; THE ; MURDERERS ; AND ; THE ; WIFE ; BEATERS ; I'VE ; ALLERS ; THOUGHT ; A ;  GENTLE ; REPROOF ; WOULD ; BE ; ENOUGH ; PUNISHMENT ; FOR ; A ; WIFE ; BEATER ; CAUSE ; HE ; PROBABLY ; HAS ; A ; LOT ; O  ; PROVOCATION ; THAT ; NOBODY ; KNOWS ; AND ; THE ; FIREBUGS ; <eps> ; CAN'T ; THINK ; O  ; THE ; RIGHT ; NAME ; SOMETHING ; LIKE ; CENDENARIES  ;  AN ; THE ; BREAKERS ; O  ; THE ; PEACE ;  AN ; WHAT ; NOT ;  AN ; YET ; THE ; LAW ; HAS ;  NOTHIN ; TO ; SAY ; TO ; A ; MAN ; LIKE ; HEN ; LORD
+Corrected Transcription: well ; as ; i ; say ; it's ; an ; awful ; queer ; world ; they ; clap ; all ; the ; burglars ; into ; jail ; and ; the ; murderers ; and ; the ; wife ; beaters ; i've ; allers ; thought ; a ;  gentle ; reproof ; would ; be ; enough ; punishment ; for ; a ; wife ; beater ; cause ; he ; probably ; has ; a ; lot ;O'; provocation ; that ; nobody ; knows ; and ; the ; firebugs ; <eps> ; can't ; think ;O'; the ; right ; name ; something ; like ; cendenaries  ;'N; the ; breakers ;O'; the ; peace ;'N; what ; not ;'N; yet ; the ; law ; has ;  nothin ; to ; say ; to ; a ; man ; like ; hen ; lord
+Label: WELL ; AS ; I ; SAY ; IT'S ; AN ; AWFUL ; QUEER ; WORLD ; THEY ; CLAP ; ALL ; THE ; BURGLARS ;  IN  ; JAIL ; AND ; THE ; MURDERERS ; AND ; THE ; WIFE ; BEATERS ;  I   ; ALLARS ; THOUGHT ; A ; GENERAL ; REPROOF ; WOULD ; BE ; ENOUGH ; PUNISHMENT ; FOR ; A ; WIFE ; BEATER ; CAUSE ; HE ; PROBABLY ; HAS ; A ; LOT ; OF ; PROVOCATION ; THAT ; NOBODY ; KNOWS ; AND ; THE ;   FIRE   ;  BUGS ; CAN'T ; THINK ; OF ; THE ; RIGHT ; NAME ; SOMETHING ; LIKE ; EXCENDIARIES ; AND ; THE ; BREAKERS ; OF ; THE ; PEACE ; AND ; WHAT ; NOT ; AND ; YET ; THE ; LAW ; HAS ; NOTHING ; TO ; SAY ; TO ; A ; MAN ; LIKE ; HEN ; LORD
+Old Phonetic Distance: 0.19047619047619047
+Phonetic Distance: 0.2261904761904762 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 1, 0, 0, 0, 0, 0, 3, 2, 0, 0, 1, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: HAVE ; I ; STILL ; A ;  GOAL
+Corrected Transcription: HALVE; i ; still ; a ;  goal
+Label: HAME ; I ; STILL ; A ; GOALL
+Old Phonetic Distance: 0.2
+Phonetic Distance: 0.4 [2, 0, 0, 0, 0]
+
+Original Transcription: AND ; THE ; TEA ; AND ; ALL ;  AN ; THE ; EGG
+Corrected Transcription: and ; the ; tea ; and ; all ;'N; the ; egg
+Label: AND ; THE ;  T  ; AND ; ALL ; AND ; THE ;  EG
+Old Phonetic Distance: 0.125
+Phonetic Distance: 0.25 [0, 0, 0, 0, 0, 2, 0, 0]
+
+Original Transcription: A ; SUDDEN ;   CAR   ;  HORN ;  WOKE ; HIM ; FROM ; HIS ; DREAM
+Corrected Transcription: a ; sudden ;CARR;HORNE;WOLK; him ; from ; his ; dream
+Label: A ; SUDDEN ; CARHORN ; AWOKE ; <eps> ; HIM ; FROM ; HIS ; DREAM
+Old Phonetic Distance: 0.7777777777777778
+Phonetic Distance: 0.8888888888888888 [0, 0, 2, 3, 3, 0, 0, 0, 0]
+
+Original Transcription: AN ; I ; ASKS ; YOU ; LET ; ME ; COME ; ALONGER ; <eps> ; YOU ; GOT ; THAT
+Corrected Transcription: 'N; i ; asks ; you ; let ; me ; come ; alonger ; <eps> ; you ; got ; that
+Label: AND ; I ; ASK  ; YOU ; LET ; ME ; COME ;  ALONG  ;   O   ; YOU ; GOT ; THAT
+Old Phonetic Distance: 0.3333333333333333
+Phonetic Distance: 0.4166666666666667 [2, 0, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0]
+
+Original Transcription: BUT ; SCUSE ; ME ; DIDN'T ;  YO ; FIGGER ; ON ; DOIN ; SOME ; DETECTIN ;  AN ;  GIVE  ; UP ; FISHIN
+Corrected Transcription: but ; scuse ; me ; didn't ;  yo ; figger ; on ; doin ; some ; detectin ;'N;  give  ; up ; fishin
+Label: BUT ; SCUSE ; ME ; DIDN'T ; YOU ; FIGURE ; ON ; DOIN ; SOME ; DETECTIN ; AND ; GIVING ; UP ; FISHIN
+Old Phonetic Distance: 0.21428571428571427
+Phonetic Distance: 0.2857142857142857 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0]
+
+Original Transcription: AH ; WELL ; IN ; THAT ; CASE ; TO ; BE ; SURE ; LET ; THEM ; GO ; ONLY ; THOSE ;  GERMAN ; QUACKS ; ARE ; MISCHIEVOUS
+Corrected Transcription: ah ; well ; in ; that ; case ; to ; be ; sure ; let ; them ; go ; only ; those ;JERMAN; quacks ; are ; mischievous
+Label: AH ; WELL ; IN ; THAT ; CASE ; TO ; BE ; SURE ; LET ; THEM ; GO ; ONLY ; THOSE ; GRERMAN ; QUACKS ; ARE ; MISCHIEVOUS
+Old Phonetic Distance: 0.11764705882352941
+Phonetic Distance: 0.17647058823529413 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0]
+
+Original Transcription: IF ; YOU'RE ; CLEAN ; THEY ; SAY ; HONEST ; POVERTY ;  AN ; IF ; YOU'RE ; DIRTY ; THEY ; SAY ; SERVE ; YOU ; RIGHT
+Corrected Transcription: if ; you're ; clean ; they ; say ; honest ; poverty ;'N; if ; you're ; dirty ; they ; say ; serve ; you ; right
+Label: IF ; YOU'RE ; CLEAN ; THEY ; SAY ; HONEST ; POVERTY ; AND ; IF ; YOU'RE ; DIRTY ; THEY ; SAY ; SERVE ; YOU ; RIGHT
+Old Phonetic Distance: 0.0625
+Phonetic Distance: 0.125 [0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: WHAT ; WOULD ; YOU ; MAKE ; OF ; ME ; AND ; THE ; CHILDREN ; TO ; BE ; SURE ; THAT ; WORRY ; HER  ; TO ; DEATH ; BETWEEN ; THEM
+Corrected Transcription: what ;WOOD; you ; make ; of ; me ; and ; the ; children ; to ; be ; sure ; that ; worry ;HUR; to ; death ; between ; them
+Label: WHAT ; DOULD ; YOU ; MAKE ; OF ; ME ; AND ; THE ; CHILDREN ; TO ; BE ; SURE ; THAT ;  WERE ; HURT ; TO ; DEATH ; BETWEEN ; THEM
+Old Phonetic Distance: 0.10526315789473684
+Phonetic Distance: 0.15789473684210525 [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+
+Original Transcription: WHY ; HE ; JES  ; STRETCH  ; HIS ; FOOL ; HAID ; AS ; FAR ; DOWN ; THAT ; CHIMNEY ; AS ; HE ; CAN ;  AN ; LISTEN ;  AN ; LISTEN
+Corrected Transcription: why ; he ; jes  ; stretch  ; his ; fool ; haid ; as ; far ; down ; that ; chimney ; as ; he ; can ;'N; listen ;'N; listen
+Label: WHY ; HE ; JUST ; STRETCHE ; HIS ; FULL ; HEAD ; AS ; FAR ; DOWN ; THE  ; CHIMNEY ; AS ; HE ; CAN ; AND ; LISTEN ; AND ; LISTEN
+Old Phonetic Distance: 0.21052631578947367
+Phonetic Distance: 0.3157894736842105 [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 2, 0]
+
+Original Transcription: HOW ;  YOU   ;  HAVE ; IMPROVED ; MY ; BOY ; HE ; EXCLAIMED ; IT ; IS ; NOW ; TIME ; FOR ; YOU ; TO ; TRY ; AND ; THIS ; IS ; AS ; GOOD ; A ; CHANGE ; AS ; ANY
+Corrected Transcription: how ;YUE;HALVE; improved ; my ; boy ; he ; exclaimed ; it ; is ; now ; time ; for ; you ; to ; try ; and ; this ; is ; as ; good ; a ; change ; as ; any
+Label: HOW ; YOU'VE ; <eps> ; IMPROVED ; MY ; BOY ; HE ; EXCLAIMED ; IT ; IS ; NOW ; TIME ; FOR ; YOU ; TO ; TRY ; AND ; THIS ; IS ; AS ; GOOD ; A ; CHANGE ; AS ; ANY
+Old Phonetic Distance: 0.12
+Phonetic Distance: 0.16 [0, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: WHEN ; HE ; GET ; HOME ; HE ; TRY ;  AN ; TRY ; TO ; BRUSH ; THAT ; SOOT ; OFF ; BUT ; IT ;  DONE ; GET ; INTO ; THE ; SKIN ;  AN ; IT ; STAY ; THERE
+Corrected Transcription: when ; he ; get ; home ; he ; try ;'N; try ; to ; brush ; that ; soot ; off ; but ; it ;DONNE; get ; into ; the ; skin ;'N; it ; stay ; there
+Label: WHEN ; HE ; GET ; HOME ; HE ; TRY ; AND ; TRY ; TO ; BRUSH ; THE  ; SUIT ; OFF ; BUT ; IT ; DON'T ; GET ; INTO ; THE ; SKIN ; AND ; IT ; STAY ; THERE
+Old Phonetic Distance: 0.16666666666666666
+Phonetic Distance: 0.25 [0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 0, 0]
+
+Original Transcription: YOUR ; MAJESTY ; HAVING ; TRIED ; THE ; AFFECTIONS ; OF ; YOUR ; PEOPLE ; YOU ; ARE ; ABSOLVED ; AND ; LOOSE  ; FROM ; ALL ; RULES ; OF ; GOVERNMENT ; AND ; MAY ; DO ; WHAT ; POWER ; WILL ; ADMIT
+Corrected Transcription: your ; majesty ; having ; tried ; the ; affections ; of ; your ; people ; you ; are ; absolved ; and ;LUCE; from ; all ; rules ; of ; government ; and ; may ; do ; what ; power ; will ; admit
+Label: YOUR ; MAJESTY ; HAVING ; TRIED ; THE ; AFFECTIONS ; OF ; YOUR ; PEOPLE ; YOU ; ARE ; ABSOLVED ; AND ; LOOSED ; FROM ; ALL ; RULES ; OF ; GOVERNMENT ; AND ; MAY ; DO ; WHAT ; POWER ; WILL ; ADMIT
+Old Phonetic Distance: 0.038461538461538464
+Phonetic Distance: 0.07692307692307693 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: I  ;   AM  ; SURE ; I ; KISSED ; LIDDY ; AND ;  I   ;  HAVE ; HAD ; TERRIBLE ; MOMENTS ; SINCE ; WHEN ; I ; SEEM ; TO ; REMEMBER ; KISSING ; MISTER ; JAMIESON ; TOO ; IN ; THE ; EXCITEMENT
+Corrected Transcription: I.;A.M.; sure ; i ; kissed ; liddy ; and ;AYE;HALVE; had ; terrible ; moments ; since ; when ; i ; seem ; to ; remember ; kissing ; mister ; jamieson ; too ; in ; the ; excitement
+Label: I'M ; <eps> ; SURE ; I ; KISSED ; LIDDY ; AND ; I'VE ; <eps> ; HAD ; SERIBALE ; MOMENTS ; SINCE ; WHEN ; I ; SEEM ; TO ; REMEMBER ; KISSING ; MISTER ; JAMESON  ; TOO ; IN ; THE ; EXCITEMENT
+Old Phonetic Distance: 0.28
+Phonetic Distance: 0.32 [1, 2, 0, 0, 0, 0, 0, 1, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: IF ; YOU ; ARE ; GENEROUS ; HERE ; IS ; A ; FITTING ; OPPORTUNITY ; FOR ; THE ; EXERCISE ; OF ; YOUR ; MAGNANIMITY ; IF ; YOU ; ARE ; PROUD ; HERE ; AM ; I ; YOUR ; RIVAL ; READY ; TO ; ACKNOWLEDGE ; MYSELF ; YOUR ;  DEBTOR ; FOR ; AN ; ACT ; OF ; THE ; MOST ; NOBLE ; FORBEARANCE
+Corrected Transcription: if ; you ; are ; generous ; here ; is ; a ; fitting ; opportunity ; for ; the ; exercise ; of ; your ; magnanimity ; if ; you ; are ; proud ; here ; am ; i ; your ; rival ; ready ; to ; acknowledge ; myself ; your ;DETTER; for ; an ; act ; of ; the ; most ; noble ; forbearance
+Label: IF ; YOU ; ARE ; GENEROUS ; HERE ; IS ; A ; FITTING ; OPPORTUNITY ; FOR ; THE ; EXERCISE ; OF ; YOUR ; MAGNANIMITY ; IF ; YOU ; ARE ; PROUD ; HERE ; AM ; I ; YOUR ; RIVAL ; READY ; TO ; ACKNOWLEDGE ; MYSELF ; YOUR ; ADEBTOR ; FOR ; AN ; ACT ; OF ; THE ; MOST ; NOBLE ; FORBEARANCE
+Old Phonetic Distance: 0.05263157894736842
+Phonetic Distance: 0.07894736842105263 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Original Transcription: WASN'T ; ANYTHING ; GOING ; ON ; THAT ; THIS ; TRIFLING ; MEMBER ; OF ; THE ; BUZZARD ; FAM'LY ; DIDN'T ; FIND ; OUT ; ABOUT ; AND ; MEDDLE ; IN ; HE ; COULD ; ASK ;  MO  ; QUESTIONS ; THAN ; PETER ; RABBIT ; CAN ;  AN ; ANYBODY ; THAT ; CAN ; DO ; THAT ; HAS ; GOT ; TO ; ASK ; A ; LOT
+Corrected Transcription: wasn't ; anything ; going ; on ; that ; this ; trifling ; member ; of ; the ; buzzard ; fam'ly ; didn't ; find ; out ; about ; and ; meddle ; in ; he ; could ; ask ;MOE; questions ; than ; peter ; rabbit ; can ;'N; anybody ; that ; can ; do ; that ; has ; got ; to ; ask ; a ; lot
+Label: WASN'T ; ANYTHING ; GOING ; ON ; THAT ; THIS ; TRIFLING ; MEMBER ; OF ; THE ; BUZZARD ; FAMILY ; DIDN'T ; FIND ; OUT ; ABOUT ; AND ; MEDDLE ; IN ; HE ; COULD ; ASK ; MORE ; QUESTIONS ; THAN ; PETER ; RABBIT ; CAN ; AND ; ANYBODY ; THAT ; CAN ; DO ; THAT ; HAS ; GOT ; TO ; ASK ; A ; LOT
+Old Phonetic Distance: 0.05
+Phonetic Distance: 0.075 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
