@@ -1,60 +1,33 @@
 import json
 import re
 import nltk
-from nltk.metrics.distance import edit_distance
-# Import necessary libraries
-from difflib import get_close_matches
-
 import enchant
+from nltk import edit_distance
 
 # Create an instance of the Enchant dictionary for English
 en_dict = enchant.Dict("en_US")
 
-# Function to generate alternative suggestions for a misspelled word
-def generate_alternative_suggestions(word):
-    suggestions = en_dict.suggest(word)
-    return suggestions
-
-def is_word_uncertain(word):
-  return not en_dict.check(word)
-
-# Function to score alternative suggestions
-def score_suggestions(word, suggestions):
-    # Calculate the similarity score between the word and suggestions
-    scores = [(suggestion, similarity_score(word, suggestion)) for suggestion in suggestions]
-    return scores
-
-# Function to calculate the similarity score between two words
-def similarity_score(word1, word2):
-    # You can use different similarity metrics here (e.g., Levenshtein distance, Jaccard similarity)
-    # For simplicity, let's use a basic approach based on the length of common characters
-    common_chars = set(word1) & set(word2)
-    score = len(common_chars) / max(len(word1), len(word2))
-    return score
-
+# Function to improve hypothesis 1
 def improve_hypothesis(hypothesis):
     improved_words = []
     words = hypothesis.split()
-    
+
     for word in words:
-        if is_word_uncertain(word):
-            suggestions = generate_alternative_suggestions(word)
-            scored_suggestions = score_suggestions(word, suggestions)
-            
-            if scored_suggestions:
-                best_suggestion, best_score = max(scored_suggestions, key=lambda x: x[1])
-                if best_score > similarity_score(word, word):
-                    improved_words.append(best_suggestion)
-                else:
-                    improved_words.append(word)  # Keep the original word if no better suggestions found
+        if not en_dict.check(word):
+            suggestions = en_dict.suggest(word)
+
+            if suggestions:
+                best_suggestion = suggestions[0]  # Select the first suggestion as the best
+                improved_words.append(best_suggestion)
             else:
                 improved_words.append(word)  # Keep the original word if no suggestions found
         else:
             improved_words.append(word)
-    
+
     improved_hypothesis = " ".join(improved_words)
 
     return improved_hypothesis
+
 
 def calculateWER(reference, hypothesis):
   reference_words = reference.split()
