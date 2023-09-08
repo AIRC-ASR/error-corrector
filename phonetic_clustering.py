@@ -4,7 +4,25 @@ from nltk import edit_distance
 import matplotlib.pyplot as plt
 import pandas as pd
 import csv
-from sklearn.cluster import KMeans
+import Levenshtein
+from scipy.cluster.hierarchy import linkage, fcluster
+from scipy.spatial.distance import pdist
+
+def cluster_strings(strings):
+    # Preprocess strings
+    preprocessed_strings = strings
+    
+    # Calculate pairwise distance matrix
+    distance_matrix = pdist(preprocessed_strings, metric='levenshtein')
+    
+    # Perform hierarchical agglomerative clustering
+    linkage_matrix = linkage(distance_matrix, method='complete')
+    
+    # Determine clusters based on a distance threshold
+    threshold = 0.5  # Adjust this threshold based on your data
+    clusters = fcluster(linkage_matrix, threshold, criterion='distance')
+    
+    return clusters
 
 def calculateWER(reference, hypothesis):
   reference_words = reference.split()
@@ -58,7 +76,4 @@ if __name__ == '__main__':
   # Select the sentence and label columns only
   X = df.loc[:, ['sentence', 'label']].values
 
-  for i in range(1, 11):
-    kmeans = KMeans(n_clusters=i, init='k-means++', max_iter=300, n_init=10, random_state=0)
-
-  kmeans.fit(X)
+  cluster_strings(X)
